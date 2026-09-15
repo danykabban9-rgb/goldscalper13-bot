@@ -1,12 +1,11 @@
 from flask import Flask, request
 import requests
-import json
-from datetime import datetime
 import os
 import math
 
 app = Flask(__name__)
 
+# Read values from Render environment
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TWELVE_DATA_KEY = os.getenv("TWELVE_DATA_KEY")
 CHAT_ID = os.getenv("CHAT_ID")
